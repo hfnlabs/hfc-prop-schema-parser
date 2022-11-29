@@ -23,6 +23,9 @@ export function getDeclarationName(decl: PrismaDeclaration): string {
     case "generator":
     case "model":
     case "type":
+    case "event":
+    case "slot":
+    case "method":
     case "typeAlias":
       return `${noCase(decl.kind)} ${decl.name.value}`;
     case "commentBlock":
@@ -37,6 +40,9 @@ export function hasBlockAttributes(
     case "enum":
     case "model":
     case "type":
+    case "event":
+    case "slot":
+    case "method":
       return true;
   }
   return false;
@@ -62,6 +68,9 @@ export function getDeclarationAttributes(
       return getEnumAttributes(decl);
     case "model":
     case "type":
+    case "event":
+    case "slot":
+    case "method":
       return getModelAttributes(decl);
     case "enumValue":
     case "field":

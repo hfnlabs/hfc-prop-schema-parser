@@ -16,7 +16,7 @@ export type SchemaDeclaration =
   | CommentBlock;
 
 export interface ModelDeclaration {
-  kind: "model" | "type";
+  kind: "model" | "type" | "event" | "slot" | "method";
   name: NameNode;
   members: ModelDeclarationMember[];
   location?: SourceRange;

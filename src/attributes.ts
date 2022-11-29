@@ -1,6 +1,5 @@
 import { asError } from "catch-unknown";
 
-import "error-cause/auto";
 import {
   findAllAttributes,
   findArgument,
@@ -344,7 +343,7 @@ function parseAttributeWith<T>(
       msg += ` at ${formatSourceRange(attr.location)}`;
     }
     msg += ` for ${declName}: ${message}`;
-    throw new Error(msg, { cause: err });
+    throw new Error(msg);
   }
 }
 

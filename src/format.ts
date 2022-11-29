@@ -11,6 +11,18 @@ const formatReducer: PrismaAstReducer<string> = {
   type({ name, members }) {
     return `type ${name} {\n${members.join("\n")}\n}`;
   },
+  event({ name, members }) {
+    if (!members.length) return `event ${name} {}`;
+    return `event ${name} {\n${members.join("\n")}\n}`;
+  },
+  slot({ name, members }) {
+    if (!members.length) return `slot ${name} {}`;
+    return `slot ${name} {\n${members.join("\n")}\n}`;
+  },
+  method({ name, members }) {
+    if (!members.length) return `method ${name} {}`;
+    return `method ${name} {\n${members.join("\n")}\n}`;
+  },
   enum({ name, members }) {
     return `enum ${name} {\n${members.join("\n")}\n}`;
   },

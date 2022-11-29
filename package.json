@@ -1,20 +1,12 @@
 {
-  "name": "@loancrate/prisma-schema-parser",
-  "version": "2.0.0",
-  "description": "Prisma Schema Parser",
+  "name": "hfc-prop-schema-parser",
+  "version": "1.0.0",
+  "description": "HFC Prop Schema Parser",
   "keywords": [
     "parser",
-    "prisma",
+    "hfc",
     "schema"
   ],
-  "homepage": "https://github.com/loancrate/prisma-schema-parser#readme",
-  "bugs": {
-    "url": "https://github.com/loancrate/prisma-schema-parser/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/loancrate/prisma-schema-parser.git"
-  },
   "license": "ISC",
   "author": "Trevor Robinson",
   "files": [
@@ -33,13 +25,11 @@
   },
   "dependencies": {
     "catch-unknown": "^1.0.0",
-    "error-cause": "^1.0.4",
     "no-case": "^3.0.4",
     "type-fest": "^2.19.0"
   },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
-    "@types/error-cause": "^1.0.1",
     "@types/jest": "^28.1.6",
     "@types/node": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.7",
